@@ -1,0 +1,154 @@
+/* static/css/style.css */
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: "New Times Roman", sans-serif;
+}
+
+.container {
+    text-align: start;
+    margin: 80px 80px; /* Adjust margin as needed */
+}
+
+.product-list-title {
+    font-size: 50px; /* Adjust font size as needed */
+    margin-bottom: 0px; /* Adjust margin as needed */
+    font-family: "New Times Roman", sans-serif;
+    text-align: center;
+}
+
+
+.product-images ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.product-images li {
+    display: inline-block;
+    margin: 0 20px; /* Adjust margin as needed */
+    text-align: center;
+}
+
+.product-images img {
+    width: 100%;
+    max-width: 100px; /* Adjust maximum width as needed */
+    height: auto;
+}
+
+.product-name {
+    font-size: 16px; /* Adjust font size as needed */
+    text-decoration: darkorange;
+    color: #1850c0;
+    display: block;
+    margin-top: 10px;
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.title-section {
+    position: relative;
+    text-align: center;
+    color: #00ff04; /* Set text color to white */
+    padding: 80px; /* Adjust padding as needed */
+    background: url('/static/images/back.jpg') center/cover;
+}
+
+
+.product-list-title {
+    margin: 0;
+}
+
+.product-images {
+    margin-top: 20px;
+    width: 20%; /* Adjust the width as needed */
+    height: auto; /* Maintain aspect ratio */
+    margin-bottom: 10px;
+}
+
+.ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.li {
+    margin: 10px;
+    text-align: center;
+}
+
+.img {
+    max-width: 100%;
+    max-height: 100%;
+    border: 6px solid #e5e0e0; /* Add a border to the images */
+    border-radius: 8px; /* Add border radius for a rounded appearance */
+}
+.title-section img {
+    height: 400px; /* Set the desired height for the image */
+    border: 1px solid #dd118b;
+    border-radius: 8px;
+}
+.search-form {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.search-input {
+    padding: 10px;
+    width: 200px;
+}
+
+.search-button {
+    padding: 10px;
+    background-color: #60da14; /* Set your desired button color */
+    color: #080212;
+    border: none;
+    cursor: pointer;
+}
+.product-item {
+    list-style: none;
+    margin-bottom: 20px;
+    position: relative;
+}
+.product-box {
+    background-color: #eef3c6; /* White background */
+    padding: 20px; /* Adjust padding as needed */
+    border-radius: 8px; /* Optional: Add rounded corners to the box */
+    box-shadow: 0 4px 8px rgba(0, 0,0.1 , 0.1);
+    display: flex; /* Optional: Add a subtle shadow */
+}
+.product-price {
+margin-left:20px;
+font-weight:bold;
+}
+.product-description{
+margin-left:20px;
+text-align:justify;
+margin-right:20px;
+}
+.like-button {
+    background-color: transparent;
+    position:absolute;
+    top: 0;
+    right: 0;
+    border: none;
+    cursor: pointer;
+    font-size: 35px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.like-button::before {
+    content: '\2661'; /* Unicode for an outlined heart */
+}
+
+.like-button.liked::before {
+    content: '\2665'; /* Unicode for a filled heart */
+    color: red; /* Color when liked */
+}
