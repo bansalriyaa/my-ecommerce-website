@@ -1,0 +1,29 @@
+<!-- store/templates/product_detail.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ object.name }}</title>
+</head>
+<body>
+    <h1>{{ object.name }}</h1>
+     <img src="{{ product.image.url }}" alt="{{ product.name }} Image" style="max-width: 300px;">
+    <p>{{ object.description }}</p>
+    <p>Price: Rs.{{ object.price }}</p>
+</body>
+</html>
+<script>
+    document.getElementById('like-button').addEventListener('click', function() {
+        var productId = this.getAttribute('data-product-id');
+
+        // Send a request to the server to update the likes count
+        fetch(`/like/${productId}/`)
+            .then(response => response.json())
+            .then(data => {
+                // Update the likes count on the page
+                document.getElementById('likes-count').innerText = data.likes;
+            })
+            .catch(error => {
+                console.error('Error:', error);
+            });
+    });
+</script>

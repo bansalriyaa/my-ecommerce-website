@@ -1,0 +1,35 @@
+/* static/css/style.css */
+.product-item {
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.product-item .product-content {
+    display: flex;
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+}
+
+.product-item .product-image {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+}
+
+.product-item .product-details {
+    flex-grow: 1;
+}
+
+.product-item .product-name {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.product-item .product-description {
+    margin-bottom: 10px;
+}
+
+.product-item .product-price {
+    font-weight: bold;
+}
